@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import App from './App';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./pages/Main/Main";
 
 export default function Router() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/main" element={<Main />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
